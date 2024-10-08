@@ -7,13 +7,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><strong>Does anyone want to know the time?</strong></title>
+    <title><strong>INSTRUMENTS</strong></title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <header></header>
+
+    <table>
+        <tr>
+            <th>brass instruments</th>
+            <th>wood instruments</th>
+            <th>string instruments</th>
+        </tr>
+        <tr>
+            <td>horn</td>
+            <td>saxophone</td>
+            <td>cello</td>
+        </tr>
+        <tr>
+            <td>trumpet</td>
+            <td>oboe</td>
+            <td>bass</td>
+        </tr>
+        <tr>
+            <td>tuba</td>
+            <td>clarinet</td>
+            <td>violin</td>
+        </tr>
+    </table>
 </body>
 
 </html>
