@@ -18,6 +18,24 @@
 
 <body>
 
+    <div class="hidden"></div>
+    <p>im hiding... so shhhh dont tell on me!</p>
+    </div>
+
+    <main>
+        <div class="container">
+            <h1>thi is the heading to my first bootstrap</h1>
+            <p>this is my first paragraph. right now im just trying bootstrap out. as help, im using following link
+                <a href="http://www.w3schools.com/bootstrap/bootstrap_get_started.asp"></a>
+            </p>
+        </div>
+
+        <div class="label-info">
+            <h2>i love blue</h2>
+            <p>im currently trying to be blue. id be really happy if it worked, does it?</p>
+        </div>
+    </main>
+
 
 </body>
 
