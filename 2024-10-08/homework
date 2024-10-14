@@ -7,11 +7,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><strong>INSTRUMENTS</strong></title>
+    <title><strong>INSTRUMENTS + CLOCK</strong></title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        .clock {
+            font-size: 3em;
+            margin-top: 30px;
+        }
 
+        .source {
+            font-size: 0.8em;
+            color: green;
+            text-align: right;
+        }
 
+        .btn {
+            transition: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -52,6 +66,16 @@
         </tr>
     </table>
 
+
+    <div class="clock text-center" id="clock">00:00:00</div>
+
+    <div class="text-center mt-3">
+        <div class="btn-group" role="group" aria-label="Button group">
+            <button type="button" class="btn btn-primary" id="startWatch">Start Watch</button>
+            <button type="button" class="btn btn-danger" id="stopWatch">Stop Watch</button>
+        </div>
+    </div>
+
     <script>
         let clockInterval;
 
@@ -72,6 +96,7 @@
             clockInterval = null;
         });
     </script>
+
 </body>
 
 </html>
