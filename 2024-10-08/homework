@@ -10,18 +10,31 @@
     <title><strong>INSTRUMENTS</strong></title>
 
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
 
-    <header></header>
 
     <table>
-        <tr>
-            <th>brass instruments</th>
-            <th>wood instruments</th>
-            <th>string instruments</th>
-        </tr>
+        <colgroup>
+            <col span="2" style="background-color:rgb(55, 0, 255)">
+            <col style="background-color:rgb(62, 4, 77)">
+        </colgroup>
+
+        <caption>Examples for instrument groups</caption>
+
+        <thead>
+            <tr>
+                <th>brass instruments</th>
+                <th>wood instruments</th>
+                <th>string instrumentss</th>
+            </tr>
+
+
+        </thead>
+
         <tr>
             <td>horn</td>
             <td>saxophone</td>
@@ -38,6 +51,27 @@
             <td>violin</td>
         </tr>
     </table>
+
+    <script>
+        let clockInterval;
+
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('clock').innerHTML = now.toLocaleTimeString();
+        }
+
+        document.getElementById('startwatch').addEventListener('click', function () {
+            if (!clockInterval) {
+                updateClock();
+                clockInterval = setInterval(updateClock, 1000);
+            }
+        });
+
+        document.getElementById('stopwatch').addEventListener('click', function () {
+            clearInterval(clockInterval);
+            clockInterval = null;
+        });
+    </script>
 </body>
 
 </html>
