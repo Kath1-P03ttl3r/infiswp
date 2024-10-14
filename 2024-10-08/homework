@@ -30,7 +30,7 @@
 
 <body>
 
-
+    able, caption, thead, tbody, tfoot, tr, th, td, rowspan, colspan
     <table>
         <colgroup>
             <col span="2" style="background-color:rgb(55, 0, 255)">
