@@ -1,0 +1,10 @@
+.side {
+    display: none !important;
+}
+
+/*  Will man oben "side" auskommentieren, braucht man auch dies hier:
+    .side {
+        visibility: collapse;
+        grid-area: main;
+    } */
+<p class="drop-title"><a href="#">Iranischer Topgeneral wieder aufgetaucht</a></p>title=class="dropdown-p"
