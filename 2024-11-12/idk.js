@@ -15,3 +15,7 @@ async function main() {
     }
 }
 main();
+
+// nmap/ date csv oder so und nicht mehr umgeleitet
+//Deno.writeTextFile
+//sont vorgeschriebenes nehemen
