@@ -9,6 +9,7 @@ try{
         const lines = data.split('\n');
         console.log(lines);
     }catch (err) {
-        
+        console.error('Error reading the directory:', err);
     }
 }
+main();
