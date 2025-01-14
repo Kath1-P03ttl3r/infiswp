@@ -1,8 +1,16 @@
-export function bmi(kg: number, m: number): number {
-  return kg / (m * m);
+/*
+import { fakerDE } from "@faker-js/faker";
+function newPerson() {
+  const gender = fakerDE.person.sexType();
+  const vorn = fakerDE.person.firstName(gender);
+  const nachn = fakerDE.person.lastName();
+  const size = fakerDE.number.int({ min: 100, max: 230 });
+  const birth = fakerDE.date.past({ years: 20 }).toISOString();
+  return `${vorn}|${nachn}|${gender}|${size}|${birth}`;
 }
-
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
 if (import.meta.main) {
-  console.log("Add 2 + 3 =", bmi(2, 3));
+  for (let i = 1; i <= 10; i++) {
+    console.log(newPerson());
+  }
 }
+*/
