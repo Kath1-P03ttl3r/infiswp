@@ -9,4 +9,7 @@ NULL: Boolean aht in der datenbank 3 zustände (true, false, null)
 
 groß-kleinschreibung ist komplett egal
 
+
+fenster neu laden: shift, ctrl,p  "reload window"
+
 */

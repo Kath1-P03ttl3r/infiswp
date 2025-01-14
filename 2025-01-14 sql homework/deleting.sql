@@ -1,2 +1,2 @@
 DELETE FROM persons
-WHERE id >4 ;
+WHERE id BETWEEN 6 AND 102 ;
