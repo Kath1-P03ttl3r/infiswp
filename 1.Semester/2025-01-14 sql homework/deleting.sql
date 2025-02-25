@@ -1,0 +1,2 @@
+DELETE FROM persons
+WHERE id BETWEEN 6 AND 102 ;

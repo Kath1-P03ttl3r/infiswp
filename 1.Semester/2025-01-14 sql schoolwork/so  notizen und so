@@ -1,0 +1,15 @@
+/* 
+CRUD = Create, Read, U, D,
+
+wenn etwas in der datenbank bei insert into nicht ausgefüllt wird, steht in der datenbanktabelle dann "null"
+
+sql code überprüfen mit "deno task test" im terminal
+
+NULL: Boolean aht in der datenbank 3 zustände (true, false, null)
+
+groß-kleinschreibung ist komplett egal
+
+
+fenster neu laden: shift, ctrl,p  "reload window"
+
+*/
