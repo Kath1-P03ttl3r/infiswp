@@ -1,0 +1,5 @@
+ip anschauen: ipconfig
+
+an pingen: ping -t ipadresse
+
+deno start:
