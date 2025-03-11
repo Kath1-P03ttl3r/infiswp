@@ -6,7 +6,7 @@ counterElement.onclick = generateList;
 const deleteElement = document.querySelector("#delete");
 deleteElement.onclick = deleteList;
 
-let x = 10;
+const x = 10;
 
 /*
 const listItems = document.querySelectorAll("li")
