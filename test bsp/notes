@@ -1,5 +1,10 @@
-deno run test.file name
-odet deno test
+deno run test.file name odet deno test
 
+a.filter (e => if e.includes("1"))
 
-infi: sql plus join
+buchstaben doppelt: let b = "whatever" (new Set(b)). size === b.length
+
+select selectdistinct where orderby and or not insert into min max count sum avg
+wildcarrsts
+
+alle joins
