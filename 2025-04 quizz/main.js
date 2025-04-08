@@ -14,8 +14,8 @@ class Person {
         );
     }
 }
-const barbara = new Person("Barbara", 15);
-const anton = new Person("Anton", 16);
-barbara.greet();
-anton.greet();
-console.log(`Gemeinsames Alter: ${barbara.age + anton.age}`);
+const salima = new Person("Salima", 15);
+const ben = new Person("Ben", 14);
+salima.greet();
+ben.greet();
+console.log(`Gemeinsames Alter: ${salima.age + ben.age}`);

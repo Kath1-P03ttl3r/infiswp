@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 20px;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 h1 {
     text-align: center;
@@ -10,9 +10,9 @@ h1 {
 .question-container {
     margin: 20px auto;
     padding: 20px;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(118, 118, 118, 0.444);
     max-width: 600px;
 }
 .result {

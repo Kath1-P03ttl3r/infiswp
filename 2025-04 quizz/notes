@@ -1,5 +1,5 @@
-js version 1:
-/*const decoder = new TextDecoder('utf-8'); //Decoder Objekt
+/*js version 1:
+const decoder = new TextDecoder('utf-8'); //Decoder Objekt
 const data = Deno.readFileSync("fragen.json"); 
 const jsonString = decoder.decode(data);
 const jsonData = JSON.parse(jsonString);
