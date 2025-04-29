@@ -8,7 +8,7 @@ jsonData.forEach((_) => {  //kan statt _ auch anderes verwenden
 console.log(`Es gibt ${jsonData.length} Fragen.`);
 
 const decoder = new TextDecoder('utf-8'); //Decoder Objekt
-const data = Deno.readFileSync("fragen.json"); 
+const data = Deno.readTextFileSync("fragen.json"); 
 const jsonString = decoder.decode(data);
 const jsonData = JSON.parse(jsonString);
 
@@ -35,9 +35,9 @@ document.getElementById('next-button').addEventListener('click', () => {
 });
 
 // Initial call to display the first question
-displayQuestion();*/
+displayQuestion();
 
-// Browser compatible version
+ Browser compatible version
 let jsonData = []; // Stores loaded questions
 let currentQuestionIndex = 0; // Tracks current question
 
@@ -71,4 +71,4 @@ document.getElementById('next-button').addEventListener('click', () => {
     } else {
         alert("Das ist die letzte Frage!");
     }
-});
+});*/
