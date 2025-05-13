@@ -21,3 +21,7 @@ git reset -- hard HEAD-1 --> main resetten
 git checkout name --> wir sind reingeswitcht
 
 git push origin name --> neuer branch für alle da*/
+
+git merge main --> main branch updaten
+
+git pull --> den branch indem ich bin pullen (bei main wichtig)
