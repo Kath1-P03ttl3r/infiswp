@@ -25,3 +25,7 @@ git push origin name --> neuer branch für alle da*/
 git merge main --> main branch updaten
 
 git pull --> den branch indem ich bin pullen (bei main wichtig)
+
+git config --global core.auto crlf true
+
+strg und , --> settings
