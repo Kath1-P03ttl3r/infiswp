@@ -1,13 +1,13 @@
 [
     {
-        "frage": "",
-        "optionen": ["", "", "", ""],
-        "antwort": ""
+        "frage": "Who wrote the novel Pride and Prejudice?",
+        "optionen": ["Barbara Pym", "Jane Austen", "Robin McKinley", "Elizabeth Gaskell"],
+        "antwort": "Jane Austen"
     },
     {
-        "frage": "",
-        "optionen": ["", "", "", ""],
-        "antwort": ""
+        "frage": "What is the name of the smallest country in the world?",
+        "optionen": ["Vatican City", "Monaco", "Nauru", "Tuvalu"],
+        "antwort": "Vatican City"
     },
     {
         "frage": "",

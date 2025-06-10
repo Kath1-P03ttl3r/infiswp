@@ -36,27 +36,27 @@ body, html {
 #weiter-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: rgb(41, 150, 159);
+    background-color: rgb(94, 92, 209);
     color: white;
-    border: none;
+    border: black solid 1px;
     border-radius: 5px;
     cursor: pointer;
 }
 #weiter-btn:hover {
-    background-color: rgb(23, 82, 87);
+    background-color:rgb(94, 92, 209);
 }
 
 #restart-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4caf50;
+    background-color: rgb(94, 92, 209);
     color: white;
-    border: none;
+    border: black solid 1px;
     border-radius: 5px;
     cursor: pointer;
 }
 #restart-btn:hover {
-    background-color: #45a049;
+    background-color: rgb(94, 92, 209);
 }
 
 ul {
