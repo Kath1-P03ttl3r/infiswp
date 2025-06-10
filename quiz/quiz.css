@@ -66,7 +66,7 @@ ul {
 
 li {
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     margin: 5px 0;
     border-radius: 5px;
 }
@@ -83,6 +83,14 @@ li {
   justify-content: space-around;
   border-radius: 3px;
 }
+
+.timer {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
 
 .option-container {
     margin-bottom: 10px;
