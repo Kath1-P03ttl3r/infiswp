@@ -1,0 +1,31 @@
+/*1. create branch (or bait)
+
+2. regelmäßig!!! merge main
+
+3. create pull request
+
+in issues: # h1, ## h2,... - macht Liste am Anfang der Zeile
+
+wir können nicht auf main branch pushen, haben keine rechte wir erstellen einen
+eigenen branch auf den wir unseren commit übersiedeln
+
+terminal:
+
+git checkout z.B. main --> aus einem branch aussteigen, bei uns aber nicht
+nötig, da wir schon aus main draußen sind
+
+git branch name --> den branch gibt es bei uns local aber sonst nicht
+
+git reset -- hard HEAD-1 --> main resetten
+
+git checkout name --> wir sind reingeswitcht
+
+git push origin name --> neuer branch für alle da*/
+
+git merge main --> main branch updaten
+
+git pull --> den branch indem ich bin pullen (bei main wichtig)
+
+git config --global core.auto crlf true
+
+strg und , --> settings

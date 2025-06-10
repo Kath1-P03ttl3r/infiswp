@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #10757c;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 8000px;
+    padding: 150px;
+    background-color: #66bec4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#start-button {
+    font-size: 5rem;
+    background-color: rgb(0, 117, 128);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+#start-button:hover {
+    background-color:  rgb(41, 150, 159);
+}
+#start-button:active {
+    background-color:  rgb(41, 150, 159);
+}
+
+#weiter-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(41, 150, 159);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#weiter-btn:hover {
+    background-color: rgb(23, 82, 87);
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#restart-btn:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#header {
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+
+.option-container {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.option-container input[type="radio"] {
+    margin-right: 10px;
+}
