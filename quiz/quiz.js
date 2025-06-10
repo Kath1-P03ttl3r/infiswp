@@ -18,6 +18,7 @@ class App {
             correctCountElement: document.getElementById("correct-count"),
             wrongCountElement: document.getElementById("wrong-count"),
             timerDisplay: document.getElementById("timer"),
+            answerFeedback: document.getElementById("answer-feedback"),
         };
         this.state = {
             currentQuestionIndex: 0,
@@ -65,6 +66,7 @@ class App {
         const frageObj = this.questionobjects[this.state.currentQuestionIndex];
         this.domElements.questionText.textContent = frageObj.frage;
         this.domElements.optionsList.innerHTML = "";
+        this.domElements.answerFeedback.textContent = ""; // Clear previous feedback
 
         frageObj.optionen.forEach((option, index) => {
             const container = document.createElement("div"); // Wrapper für Radio + Label
@@ -92,7 +94,9 @@ class App {
             `Correct: ${this.state.correctquestions}`;
         this.domElements.wrongCountElement.textContent =
             `Wrong: ${this.state.wrongquestions}`;
-    }
+     const options = this.domElements.optionsList.querySelectorAll('input[type="radio"]');
+        options.forEach(radio => radio.disabled = false);
+        }
 
     // Quiz starten
     init() {
@@ -130,10 +134,15 @@ class App {
         const selected = document.querySelector(
             'input[name="frageOption"]:checked',
         );
+        
         if (!selected) {
-            this.domElements.weiterBtn.disabled = true; // Kein Ergebnis ausgewählt, Button deaktiviert und nichts weiter tun
+            // If no option is selected, prevent proceeding and optionally give feedback
+            this.domElements.answerFeedback.textContent = "Please select an answer!";
+            this.domElements.answerFeedback.style.color = "orange";
+            return; // Stop the function here
         }
 
+        this.domElements.answerFeedback.textContent = "";
         this.domElements.weiterBtn.disabled = false;
 
         const userAnswer = selected.value;
@@ -142,24 +151,34 @@ class App {
 
         if (currentFrage.pruefen(userAnswer)) {
             this.state.correctquestions++;
+           this.domElements.answerFeedback.textContent = "Correct!";
+            this.domElements.answerFeedback.style.color = "green";
         } else {
             this.state.wrongquestions++;
+            this.domElements.answerFeedback.textContent = `Wrong! The correct answer was: "${currentFrage.antwort}"`;
+            this.domElements.answerFeedback.style.color = "red";
         }
+        
+        const options = this.domElements.optionsList.querySelectorAll('input[type="radio"]');
+        options.forEach(radio => radio.disabled = true);
 
-        this.state.currentQuestionIndex++;
+        // Wait a moment before moving to the next question to allow feedback to be seen
+        setTimeout(() => {
+            this.state.currentQuestionIndex++;
 
-        if (this.state.currentQuestionIndex < this.questionobjects.length) { // Es gibt noch Fragen
-            this.renderQuestion(
-                this.questionobjects[this.state.currentQuestionIndex],
-            );
-        } else {
-            this.show_endpage();
-            this.domElements.endcontainer.innerHTML = `<h2>Quiz Finished!</h2>
-                <p>You answered ${this.state.correctquestions}/${this.questionobjects.length} questions correct and ${this.state.wrongquestions}/${this.questionobjects.length} wrong.</p>
-                <p>time: ${this.domElements.timerDisplay.textContent}</p>`;
-            this.stopTimer();
-        }
-    } // <-- This closes the weiterBtn.addEventListener function
+            if (this.state.currentQuestionIndex < this.questionobjects.length) {
+                this.renderQuestion(); // No need to pass the question object explicitly
+            } else {
+                 this.domElements.answerFeedback.textContent = ""; // Clear feedback here
+                this.show_endpage();
+                this.domElements.endcontainer.innerHTML = `<h2>Quiz Finished!</h2>
+                    <p>You answered ${this.state.correctquestions}/${this.questionobjects.length} questions correct and ${this.state.wrongquestions}/${this.questionobjects.length} wrong.</p>
+                    <p>Time: ${this.domElements.timerDisplay.textContent}</p>`;
+                this.stopTimer();
+            }
+        }, 1500); // 1.5 second delay
+    }
+
     gotoEnd() {
         this.state.currentQuestionIndex = this.questionobjects.length - 1; // Setze den Index auf die letzte Frage
         this.renderQuestion();
@@ -171,6 +190,7 @@ class App {
         this.domElements.restartBtn.classList.remove("hidden");
         this.state.currentQuestionIndex = 0;
         this.domElements.endcontainer.classList.add("hidden");
+        this.domElements.answerFeedback.textContent = ""; // Clear feedback on restart
 
         this.state.correctquestions = 0;
         this.state.wrongquestions = 0;
@@ -184,10 +204,9 @@ class App {
 
         this.domElements.questionNumber.textContent =
             `1/${this.questionobjects.length}`;
-        this.renderQuestion(
-            this.questionobjects[this.state.currentQuestionIndex],
-        );
-        this.resetTimer(); // Timer zurücksetzen und starten
+        this.renderQuestion();
+
+         this.resetTimer(); // Timer zurücksetzen und starten
     }
 }
 
