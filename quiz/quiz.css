@@ -100,3 +100,9 @@ s.option-container {
 .option-container input[type="radio"] {
     margin-right: 10px;
 }
+
+.f{
+    font-size: 1.5rem;
+    color: white;
+   
+}

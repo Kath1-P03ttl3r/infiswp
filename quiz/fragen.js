@@ -48,7 +48,7 @@ export const fragen = [
        {
         "frage": "What is the name of the first email?",
         "optionen": ["QWRETYUIOP", "QWRETYIUIOP", "QWRETYIUOP", "QWERTYUIOP"],
-        "antwort": ""
+        "antwort": "QWERTYUIOP"
     },
        {
         "frage": "Which country has the highest life expectancy?",
@@ -58,8 +58,8 @@ export const fragen = [
        {
         "frage": "What is the official language of China",
         "optionen": ["Chinese", "Putonghua", "Mandarin", "Cantonese"],
-        "antwort": ""
-    }
+        "antwort": "Putonghua"
+    },
     {
         "frage": "Did you like this quiz?",
         "optionen": ["Yes", "No", "Maybe", "I don't know"],
