@@ -59,5 +59,10 @@
         "frage": "What is the official language of China",
         "optionen": ["Chinese", "Putonghua", "Mandarin", "Cantonese"],
         "antwort": "Putonghua"
+    },
+    {
+        "frage": "Did you like this quiz?",
+        "optionen": ["Yes", "No", "Maybe", "I don't know"],
+        "antwort": "Yes"
     }
 ]

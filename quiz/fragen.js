@@ -60,4 +60,9 @@ export const fragen = [
         "optionen": ["Chinese", "Putonghua", "Mandarin", "Cantonese"],
         "antwort": ""
     }
+    {
+        "frage": "Did you like this quiz?",
+        "optionen": ["Yes", "No", "Maybe", "I don't know"],
+        "antwort": "Yes"
+    }
 ];
