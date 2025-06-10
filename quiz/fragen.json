@@ -59,15 +59,5 @@
         "frage": "What is the official language of China",
         "optionen": ["Chinese", "Putonghua", "Mandarin", "Cantonese"],
         "antwort": ""
-    },
-       {
-        "frage": "",
-        "optionen": ["", "", "", ""],
-        "antwort": ""
-    },
-    {
-        "frage": "",
-        "optionen": ["", "", "", ""],
-        "antwort": ""
     }
 ]
