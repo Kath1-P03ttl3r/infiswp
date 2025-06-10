@@ -148,10 +148,10 @@ class App {
         const userAnswer = selected.value;
         const currentFrage =
             this.questionobjects[this.state.currentQuestionIndex];
-
         if (currentFrage.pruefen(userAnswer)) {
-            this.state.correctquestions++;
-           this.domElements.answerFeedback.textContent = "Correct!";
+             this.state.correctquestions++;
+            // Hier wird der Text mit <strong> umschlossen
+            this.domElements.answerFeedback.innerHTML = "<strong>Correct!</strong>";
             this.domElements.answerFeedback.style.color = "green";
         } else {
             this.state.wrongquestions++;

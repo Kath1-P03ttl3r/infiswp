@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: linear-gradient(#3422ab, #641ecd, #8a47ff ); /* Gold zu Tomatenrot, diagonal */
+}
+
+.container {
+    max-width: 8000px;
+    padding: 150px;
+    background-color: #6a40c51f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#start-button {
+   font-size: 5rem;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+#start-button:hover {
+    background-color:  rgba(94, 92, 209, 0.995);
+}
+#start-button:active {
+    background-color:  rgb(94, 92, 209);
+}
+
+#weiter-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(94, 92, 209);
+    color: white;
+    border: black solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#weiter-btn:hover {
+    background-color:rgb(94, 92, 209);
+}
+
+#restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(94, 92, 209);
+    color: white;
+    border: black solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#restart-btn:hover {
+    background-color: rgb(94, 92, 209);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#header {
+   display: flex;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: white;
+  justify-content: space-around;
+  border-radius: 3px;
+}
+
+.timer {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    align-items: end;
+}
+
+s.option-container {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.option-container input[type="radio"] {
+    margin-right: 10px;
+}
+
+.f{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+   
+}

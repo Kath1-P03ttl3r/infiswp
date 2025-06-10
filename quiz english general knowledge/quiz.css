@@ -2,11 +2,11 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #442092;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+     background: linear-gradient(#3422ab, #641ecd, #8a47ff ); /* Gold zu Tomatenrot, diagonal */
 }
 
 .container {
@@ -20,14 +20,14 @@ body, html {
 
 #start-button {
    font-size: 5rem;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0);
   color: black;
   padding: 0.5em;
   border-radius: 0.5em;
   cursor: pointer;
 }
 #start-button:hover {
-    background-color:  rgb(94, 92, 209);
+    background-color:  rgba(94, 92, 209, 0.995);
 }
 #start-button:active {
     background-color:  rgb(94, 92, 209);
@@ -103,6 +103,6 @@ s.option-container {
 
 .f{
     font-size: 1.5rem;
-    color: white;
+    color: rgb(255, 255, 255);
    
 }
