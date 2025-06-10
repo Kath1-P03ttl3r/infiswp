@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #10757c;
+    background-color: #442092;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -12,25 +12,25 @@ body, html {
 .container {
     max-width: 8000px;
     padding: 150px;
-    background-color: #66bec4;
+    background-color: #6a40c51f;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 #start-button {
-    font-size: 5rem;
-    background-color: rgb(0, 117, 128);
-    color: white;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    cursor: pointer;
+   font-size: 5rem;
+  background-color: rgba(255, 255, 255, 0.65);
+  color: black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
 #start-button:hover {
-    background-color:  rgb(41, 150, 159);
+    background-color:  rgb(94, 92, 209);
 }
 #start-button:active {
-    background-color:  rgb(41, 150, 159);
+    background-color:  rgb(94, 92, 209);
 }
 
 #weiter-btn {
@@ -76,13 +76,12 @@ li {
 }
 
 #header {
-    display: flex;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    justify-content: space-around;
-    border-radius: 3px;
+   display: flex;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: white;
+  justify-content: space-around;
+  border-radius: 3px;
 }
 
 .option-container {

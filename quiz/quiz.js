@@ -89,9 +89,9 @@ class App {
             this.state.currentQuestionIndex + 1
         }/${this.questionobjects.length}`;
         this.domElements.correctCountElement.textContent =
-            `Correct: ${this.state.correctquestions}`;
+            `Correct ${this.state.correctquestions},`;
         this.domElements.wrongCountElement.textContent =
-            `Wrong: ${this.state.wrongquestions}`;
+            `Wrong ${this.state.wrongquestions},`;
     }
 
     // Quiz starten
